@@ -63,6 +63,49 @@ export const itemStateTrigger = trigger('itemState', [
         opacity: 0,
         transform: 'translateX(100%)'
       })
+    ])),   
+  ]),
+  transition('slidUp => slidDown', [
+    animate('300ms ease-out', keyframes([
+      style({
+        transform: 'translateY(-100%)'
+      }),
+      style({
+        transform: 'translateY(0)'
+      })
+    ]))
+  ]),
+  transition('slidDown => slidUp', [
+    animate('300ms ease-out', keyframes([
+      style({
+        transform: 'translateY(0)'
+      }),
+      style({
+        transform: 'translateY(-100%)'
+      })
+    ]))
+  ])
+]);
+
+export const slideStateTrigger = trigger('slideState', [
+  transition(':enter', [
+    animate('300ms ease-out', keyframes([
+      style({
+        transform: 'translateY(-100%)'
+      }),
+      style({
+        transform: 'translateY(0)'
+      })
+    ])) 
+  ]),
+  transition(':leave', [
+    animate('300ms ease-out', keyframes([
+      style({
+        transform: 'translateY(0)'
+      }),
+      style({
+        transform: 'translateY(-100%)'
+      })
     ]))
   ])
 ]);

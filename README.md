@@ -34,3 +34,7 @@ npm install express path --save
 ```
 
 ## Automatic Deployment from GitHub to Heroku
+- create new app
+- connect to github repo
+- enable automatic build 
+- done
