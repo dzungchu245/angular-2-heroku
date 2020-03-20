@@ -10,7 +10,7 @@ package-lock.json
 
 # IDEs and editors
 Untitled.code-workspace
-/.idea
+ /.idea
 .project
 .classpath
 .c9/
@@ -19,6 +19,7 @@ Untitled.code-workspace
 *.sublime-workspace
 
 # IDE - VSCode
+/.vscode
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
