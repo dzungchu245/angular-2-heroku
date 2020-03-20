@@ -9,6 +9,7 @@
 package-lock.json
 
 # IDEs and editors
+Untitled.code-workspace
 /.idea
 .project
 .classpath
